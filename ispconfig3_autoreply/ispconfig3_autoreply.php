@@ -60,7 +60,7 @@ class ispconfig3_autoreply extends rcube_plugin
 
         $startdate = strtotime($startdate) - ($user_offset - $server_offset);
         $enddate = strtotime($enddate) - ($user_offset - $server_offset);
-
+/*
         if ($enddate < $startdate)
             $enddate = $startdate + 86400;
 
@@ -75,7 +75,7 @@ class ispconfig3_autoreply extends rcube_plugin
                          'day'    => date("d", $enddate),
                          'hour'   => date("H", $enddate),
                          'minute' => date("i", $enddate));
-
+*/
         if (!$enabled)
             $enabled = 'n';
         else
